@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
   padding: 0;
@@ -14,3 +18,23 @@ a {
 * {
   box-sizing: border-box;
 }
+
+/* Inter*/
+@font-face {
+  font-family: 'Inter-Bold', sans-serif;
+  src: url(../fonts/static/Inter-Bold.ttf);
+}
+
+@font-face {
+  font-family: 'Inter-Medium', sans-serif;
+  src: url(../fonts/static/Inter-Medium.ttf);
+}
+
+.inter-bold {
+  font-family: 'Inter-Bold', sans-serif;
+}
+
+.inter-medium {
+  font-family: 'Inter-Medium', sans-serif;
+}
+
