@@ -47,8 +47,8 @@ const Footer = () => {
 
                 <div className='mx-auto container  flex justify-center items-center flex-wrap w-1/2 lg:w-[76%] space-x-[15.54px] '>
 
-                    {data?.map((item) => (
-                        <div className="">
+                    {data?.map((item , index) => (
+                        <div key={index} className="">
                             <div className="bg-[#374151] shadow-footerIcon flex flex-col items-center justify-center xl:w-[49.46px] xl:h-[49.46px] lg:w-[49.46px] lg:h-[49.46px] md:w-[91.91px] md:h-[91.91px] w-[44.28px] h-[44.28px] rounded-full mb-5">
                                 <img src={item.image} alt="" className="xl:w-[19.97px] xl:h-[14.99px] lg:w-[19.97px] lg:h-[14.99px] md:w-[38.3px] md:h-[38.3px] w-[18.45px] h-[18.45px]" />
                             </div>

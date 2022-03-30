@@ -71,11 +71,11 @@ const OurTeam = () => {
                     </div>
                 </div>
 
-                <div className='mx-auto container  flex justify-center items-center flex-wrap w-full pt-20 space-x-8 '>
+                <div className='mx-auto container  flex justify-center items-center flex-wrap w-[64%] pt-20 space-x-8 '>
 
-                    {data.map((item) => (
-                        <div className=" relative flex flex-col justify-center items-center p-6 rounded-xl shadow-lg bg-[#FFFFFF] max-w-[329px] h-[400px] w-full md:w-1/2 lg:w-1/2 2xl:w-1/2 mb-[88px]">
-                            <img class="inline-block h-[91px] w-[100px] rounded-full ring-2 ring-white absolute -top-[23px]" src={item.image} alt="" />
+                    {data.map((item , index) => (
+                        <div key={index} className=" relative flex flex-col justify-center items-center p-6 rounded-xl shadow-lg bg-[#FFFFFF] max-w-[329px] h-[400px] w-full md:w-1/2 lg:w-1/2 2xl:w-1/2 mb-[88px]">
+                            <img className="inline-block h-[91px] w-[100px] rounded-full ring-2 ring-white absolute -top-[23px]" src={item.image} alt="" />
                             <h5 className="max-w-[190px] text-[#374151] text-2xl leading-8 font-bold  not-italic inter-bold pt-9 pb-6 ">{item.name}</h5>
                             <p className="max-w-[262px] text-[#374151] text-center text-base leading-7 font-normal  not-italic inter-medium pb-9 ">{item.dis}</p>
 

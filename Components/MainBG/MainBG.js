@@ -73,9 +73,9 @@ const MainBG = () => {
 
     return (
         <div className='relative bg-[#1F2937] h-[710px]'>
-           <div>
-           <img className='absolute left-[147px] top-[520px]' src='./images/Group 100.svg' alt='' />
-           </div>
+            <div>
+                <img className='absolute left-[147px] top-[520px]' src='./images/Group 100.svg' alt='' />
+            </div>
 
 
             <div className=' flex justify-between w-full  items-center flex-col lg:flex-row '>
@@ -105,10 +105,10 @@ const MainBG = () => {
                             <div>
                                 <div className='flex justify-between items-center space-x-4 '>
                                     <p className='text-[#FFFFFF] font-normal not-italic text-lg leading-7 w-[66px]'>Remote</p>
-                                    <div class="relative">
-                                        <input type="checkbox" id="toggleB" class="sr-only" />
-                                        <div class="block bg-[#FFFFFF] w-14 h-8 rounded-full"></div>
-                                        <div class="dot absolute left-1 top-1 bg-[#10B981] w-6 h-6 rounded-full transition">
+                                    <div className="relative">
+                                        <input type="checkbox" id="toggleB" className="sr-only" />
+                                        <div className="block bg-[#FFFFFF] w-14 h-8 rounded-full"></div>
+                                        <div className="dot absolute left-1 top-1 bg-[#10B981] w-6 h-6 rounded-full transition">
                                         </div>
                                     </div>
                                 </div>
@@ -116,10 +116,10 @@ const MainBG = () => {
                             </div>
                             <div className='flex justify-between items-center space-x-4 pl-8'>
                                 <p className='text-[#FFFFFF] font-normal not-italic text-lg leading-7 w-[66px] '>Onsite</p>
-                                <div class="relative">
-                                    <input type="checkbox" id="toggleB" class="sr-only" />
-                                    <div class="block bg-[#FFFFFF] w-14 h-8 rounded-full"></div>
-                                    <div class="dot absolute left-1 top-1 bg-[#6B7280] w-6 h-6 rounded-full transition"></div>
+                                <div className="relative">
+                                    <input type="checkbox" id="toggleB" className="sr-only" />
+                                    <div className="block bg-[#FFFFFF] w-14 h-8 rounded-full"></div>
+                                    <div className="dot absolute left-1 top-1 bg-[#6B7280] w-6 h-6 rounded-full transition"></div>
                                 </div>
                             </div>
 
@@ -129,7 +129,7 @@ const MainBG = () => {
                 </div>
 
                 <div className='right relative left flex justify-start items-center '>
-                    <img className='relative max-w-[704px] h-[810px] -mb-56' src='./images/MainImage.svg' alt='' />
+                    <img className='relative max-w-[704px] h-[810px] -mb-64' src='./images/MainImage.svg' alt='' />
 
                     <img className='absolute -left-[56px] top-[71px]' src='./images/Group 100.svg' alt='' />
                 </div>

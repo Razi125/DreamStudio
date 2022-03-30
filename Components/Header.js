@@ -1,5 +1,5 @@
 import React from 'react'
-import MainBG from './MainBG/MainBG'
+import Link from 'next/link'
 
 const Header = () => {
     return (
@@ -11,27 +11,27 @@ const Header = () => {
                     </div>
 
                     <div className='flex justify-between space-x-[40px] items-center'>
-                        <div>
-                            <a href='/' className='text-[#FFFFFF] text-lg font-semibold not-italic md:leading-7 inter-medium'>Product</a>
+                        <div className='text-[#FFFFFF] text-lg font-semibold not-italic md:leading-7 inter-medium'>
+                            <Link  href="/">Product</Link>
 
                         </div>
                         <div>
                             <img src='./images/Vector.svg' alt='Vector' />
                         </div>
 
-                        <div>
-                            <a href='/' className='text-[#FFFFFF] text-lg font-semibold not-italic md:leading-7 inter-medium'>Performance</a>
+                        <div className='text-[#FFFFFF] text-lg font-semibold not-italic md:leading-7 inter-medium'>
+                            <Link href="/">Performance</Link>
                         </div>
                         <div>
                             <img src='./images/Vector.svg' alt='Vector' />
                         </div>
-                        <div>
-                            <a href='/' className='text-[#FFFFFF] text-lg font-semibold not-italic md:leading-7 inter-medium'>Dashboard</a>
+                        <div className='text-[#FFFFFF] text-lg font-semibold not-italic md:leading-7 inter-medium'>
+                            <Link href="/">Dashboard</Link>
                         </div>
                     </div>
                     <div className='flex justify-between items-center space-x-[36px]'>
-                        <div>
-                            <a href='/' className='text-[#34D399] text-lg font-semibold not-italic md:leading-7 inter-medium'>Login</a>
+                        <div className='text-[#34D399] text-lg font-semibold not-italic md:leading-7 inter-medium'>
+                            <Link href="/">Login</Link>
                         </div>
                         <div>
                             <button className='bg-[#10B981] rounded-lg text-[#FFFFFF] md:text-lg font-medium not-italic md:leading-7 inter-medium py-[10px] px-7'>Sign Up</button>

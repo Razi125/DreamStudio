@@ -48,8 +48,8 @@ const ExploreDream = () => {
 
             <div className='mx-auto container  flex justify-center items-center flex-wrap w-full pt-20'>
 
-                {data?.map((single) => (
-                    <div className=" flex flex-col justify-center items-center p-6 rounded-xl shadow-none hover:shadow-lg bg-white max-w-[214px] w-full md:w-1/2 lg:w-2/6 ">
+                {data?.map((single , index) => (
+                    <div key={index} className=" flex flex-col justify-center items-center p-6 rounded-xl shadow-none hover:shadow-lg bg-white max-w-[214px] w-full md:w-1/2 lg:w-2/6 ">
                         <h5 className="max-w-[107px] text-[#111827] text-2xl leading-6 font-bold  not-italic inter-bold pt-[31px] pb-[34px]">{single.title}</h5>
 
                         <div className="bg-[#FFFFFF] shadow-Cardshadow flex flex-col items-center justify-center xl:w-[107.55px] xl:h-[107.55px] lg:w-[98.41px] lg:h-[98.41px] md:w-[91.91px] md:h-[91.91px] w-[44.28px] h-[44.28px] rounded-full ">

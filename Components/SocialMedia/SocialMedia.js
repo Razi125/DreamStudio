@@ -102,8 +102,8 @@ const SocialMedia = () => {
 
                 <div className='mx-auto container  flex justify-center items-center flex-wrap w-1/2 lg:w-[49.333333%] xl:w-[48.333333%]  pt-20 space-x-[29.5px] pb-40'>
 
-                    {data?.map((single) => (
-                        <div className="">
+                    {data?.map((single , index) => (
+                        <div key={index} className="">
                             <div className="bg-[#FFFFFF] shadow-Cardshadow flex flex-col items-center justify-center xl:w-[91.41px] xl:h-[91.41px] lg:w-[91.41px] lg:h-[91.41px] md:w-[91.91px] md:h-[91.91px] w-[44.28px] h-[44.28px] rounded-full mb-7">
                                 <img src={single.image} alt="" className="xl:w-[29.98px] xl:h-[29.79px] lg:w-[29.98px] lg:h-[29.79px] md:w-[38.3px] md:h-[38.3px] w-[18.45px] h-[18.45px]" />
                             </div>

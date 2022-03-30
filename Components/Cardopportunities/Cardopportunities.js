@@ -59,8 +59,8 @@ const Cardopportunities = () => {
 
                     <div className='flex justify-center items-start flex-wrap '>
                         {
-                            data.map((item) => (
-                                <div className='flex flex-col justify-center items-start w-full md:w-[34.333333%] '>
+                            data.map((item, index) => (
+                                <div key={index} className='flex flex-col justify-center items-start w-full md:w-[34.333333%] '>
                                     <div className='flex justify-center items-center pt-4 '>
                                         <div className='pl-5'>
                                             <img className='w-[44px] h-[44px] ' src={item.image} />
