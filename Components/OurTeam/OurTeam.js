@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Image from 'next/image';
 const data = [
     {
         id: 1,
@@ -54,12 +54,12 @@ const OurTeam = () => {
 
                 {/** Left */}
                 <div className=' flex justify-start items-start'>
-                    <img className='absolute pt-[33px] pl-[31px] ' src='./images/teamleft.svg' alt='' />
+                    <Image className='absolute pt-[33px] pl-[31px] ' src='./images/teamleft.svg' alt='' />
                 </div>
 
                 {/** right */}
                 <div className=' flex justify-end items-start'>
-                    <img className='absolute pt-[33px] pr-[115px] ' src='./images/teamright.svg' alt='' />
+                    <Image className='absolute pt-[33px] pr-[115px] ' src='./images/teamright.svg' alt='' />
                 </div>
 
                 <div className='mx-auto container w-full flex flex-col justify-center items-center pt-40'>
@@ -75,7 +75,7 @@ const OurTeam = () => {
 
                     {data.map((item , index) => (
                         <div key={index} className=" relative flex flex-col justify-center items-center p-6 rounded-xl shadow-lg bg-[#FFFFFF] max-w-[329px] h-[400px] w-full md:w-1/2 lg:w-1/2 2xl:w-1/2 mb-[88px]">
-                            <img className="inline-block h-[91px] w-[100px] rounded-full ring-2 ring-white absolute -top-[23px]" src={item.image} alt="" />
+                            <Image className="inline-block h-[91px] w-[100px] rounded-full ring-2 ring-white absolute -top-[23px]" src={item.image} alt="" />
                             <h5 className="max-w-[190px] text-[#374151] text-2xl leading-8 font-bold  not-italic inter-bold pt-9 pb-6 ">{item.name}</h5>
                             <p className="max-w-[262px] text-[#374151] text-center text-base leading-7 font-normal  not-italic inter-medium pb-9 ">{item.dis}</p>
 

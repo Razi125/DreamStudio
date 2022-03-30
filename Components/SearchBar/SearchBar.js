@@ -1,13 +1,13 @@
 import React from 'react'
-
+import Image from 'next/image';
 const SearchBar = () => {
     return (
         <>
-            <div className='mx-auto container absolute left-[225px] top-[761px] '>
+            <div className='mx-auto container absolute left-[225px] top-[761px] hidden xl:block'>
                 <div className='flex justify-between items-center w-[75%] h-[112px] bg-[#FFFFFF] rounded-lg shadow-iconShadow '>
                     <div className='flex items-center space-x-8'>
                         <div className='pl-9'>
-                            <img className='w-[29.33px] h-[33.89px]' src='./images/searchIcon.svg' alt='' />
+                            <Image className='w-[29.33px] h-[33.89px]' src='./images/searchIcon.svg' alt='' />
                         </div>
                         <div>
                             <p className='text-[#374151] text-lg leading-7 font-normal inter-medium '>Location</p>

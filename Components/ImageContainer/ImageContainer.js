@@ -1,13 +1,13 @@
 import React from 'react'
-
+import Image from 'next/image';
 const ImageContainer = () => {
   return (
     <div className='flex justify-between items-center pt-[15.5rem]'>
         <div>
-         <img className='pl-[155px]' src='./images/bgimage2.svg' alt=''/>
+         <Image className='pl-[155px]' src='./images/bgimage2.svg' alt=''/>
         </div>
         <div>
-        <img className='pr-[80.71px]' src='./images/bgimage1.svg' alt=''/>
+        <Image className='pr-[80.71px]' src='./images/bgimage1.svg' alt=''/>
         </div>
       
     </div>

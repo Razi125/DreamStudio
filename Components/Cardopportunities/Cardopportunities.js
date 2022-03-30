@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Image from 'next/image';
 const Cardopportunities = () => {
 
     const data = [
@@ -34,19 +34,19 @@ const Cardopportunities = () => {
 
             {/** right */}
             <div className=' flex justify-end items-start'>
-                <img className='absolute pr-[519px] top-16' src='./images/oppleft.svg' alt='' />
+                <Image className='absolute pr-[519px] top-16' src='./images/oppleft.svg' alt='' />
             </div>
             {/** right 2*/}
             <div className=' flex justify-end items-start'>
-                <img className='absolute pr-[983px] top-[19rem]' src='./images/oppleft2.svg' alt='' />
+                <Image className='absolute pr-[983px] top-[19rem]' src='./images/oppleft2.svg' alt='' />
             </div>
 
             <div className=' flex justify-between w-full  items-center flex-col lg:flex-row pt-[160px]'>
 
                 <div className=' relative left flex justify-start items-center '>
-                    <img className='max-w-[704px] h-[810px]' src='./images/cardoppimage.svg' alt='' />
+                    <Image className='max-w-[704px] h-[810px]' src='./images/cardoppimage.svg' alt='' />
 
-                    <img className='absolute left-[60px] top-[71px]' src='./images/Group 100.svg' alt='' />
+                    <Image className='absolute left-[60px] top-[71px]' src='./images/Group 100.svg' alt='' />
                 </div>
 
                 <div className='right mx-0 container  flex flex-col justify-center items-start mt-8 lg:mt-0'>
@@ -63,7 +63,7 @@ const Cardopportunities = () => {
                                 <div key={index} className='flex flex-col justify-center items-start w-full md:w-[34.333333%] '>
                                     <div className='flex justify-center items-center pt-4 '>
                                         <div className='pl-5'>
-                                            <img className='w-[44px] h-[44px] ' src={item.image} />
+                                            <Image className='w-[44px] h-[44px] ' src={item.image} alt='' />
                                         </div>
                                         <div>
                                             <h1 className=' lg:max-w-[147px] text-[#374151] text-[1.4rem] lg:text-4xl leading-10 font-extrabold not-italic inter-bold '>{item.title}</h1>
