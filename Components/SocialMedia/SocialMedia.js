@@ -1,5 +1,4 @@
 import React from 'react'
-import Image from 'next/image';
 
 const SocialMedia = () => {
 
@@ -72,40 +71,40 @@ const SocialMedia = () => {
             <div className='PaentDiv  relative'>
                 {/**Left */}
                 <div className=' flex justify-start items-center'>
-                    <Image className='absolute top-0 pt-[20px] pl-[317px] pr-9' src='./images/Socialleft.svg' alt='' />
+                    <img className='absolute top-0 pt-[20px] pl-[317px] pr-9' src='./images/Socialleft.svg' alt='' />
                 </div>
 
                 {/**LeftEnd */}
                 <div className=' flex justify-start items-center'>
-                    <Image className='absolute top-[461px]  pl-[317px] pr-9' src='./images/socialEndleft.svg' alt='' />
+                    <img className='absolute top-[461px]  pl-[317px] pr-9' src='./images/socialEndleft.svg' alt='' />
                 </div>
 
 
                 {/**right */}
                 <div className=' flex justify-end items-start'>
-                    <Image className='absolute top-0 pr-[22rem]' src='./images/socialright.svg' alt='' />
+                    <img className='absolute top-0 pr-[22rem]' src='./images/socialright.svg' alt='' />
                 </div>
 
                 {/**End right */}
                 <div className=' flex justify-end items-end'>
-                    <Image className='absolute top-[500px] pr-[23rem]' src='./images/socialEndRight.svg' alt='' />
+                    <img className='absolute top-[500px] pr-[23rem]' src='./images/socialEndRight.svg' alt='' />
                 </div>
 
-                <div className='mx-auto container w-full flex flex-col justify-center items-center pt-16'>
+                <div className='mx-auto container px-4 w-full flex flex-col justify-center items-center pt-16'>
                     <div>
-                        <h1 className='text-[#111827] text-center text-4xl leading-10 font-extrabold not-italic inter-bold max-w-[688px] pb-9'>We’re available on more than 20+ Social Media Companies World Wide!</h1>
+                        <h1 className='text-[#111827] text-center text-base md:text-4xl leading-10 font-extrabold not-italic inter-bold max-w-[688px] pb-9'>We’re available on more than 20+ Social Media Companies World Wide!</h1>
                     </div>
                     <div>
                         <p className='max-w-[624px] text-[#374151] text-center  text-lg  leading-[18px] font-normal not-italic inter-medium'>We’ve all the required Catagories that you can Explore from</p>
                     </div>
                 </div>
 
-                <div className='mx-auto container  flex justify-center items-center flex-wrap w-1/2 lg:w-[49.333333%] xl:w-[48.333333%]  pt-20 space-x-[29.5px] pb-40'>
+                <div className='mx-auto container  flex justify-center items-center flex-wrap w-full lg:w-[49.333333%] xl:w-[46.333333%]  pt-20 space-x-[29.5px] pb-40'>
 
                     {data?.map((single, index) => (
-                        <div key={index} className="">
+                        <div key={index} className=" ">
                             <div className="bg-[#FFFFFF] shadow-Cardshadow flex flex-col items-center justify-center xl:w-[91.41px] xl:h-[91.41px] lg:w-[91.41px] lg:h-[91.41px] md:w-[91.91px] md:h-[91.91px] w-[44.28px] h-[44.28px] rounded-full mb-7">
-                                <Image src={single.image} alt="" className="xl:w-[29.98px] xl:h-[29.79px] lg:w-[29.98px] lg:h-[29.79px] md:w-[38.3px] md:h-[38.3px] w-[18.45px] h-[18.45px]" />
+                                <img src={single.image} alt="" className="xl:w-[29.98px] xl:h-[29.79px] lg:w-[29.98px] lg:h-[29.79px] md:w-[38.3px] md:h-[38.3px] w-[18.45px] h-[18.45px]" />
                             </div>
                         </div>
                     ))}

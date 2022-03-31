@@ -1,5 +1,5 @@
 import React from 'react'
-import Image from 'next/image';
+
 const Cardopportunities = () => {
 
     const data = [
@@ -34,27 +34,27 @@ const Cardopportunities = () => {
 
             {/** right */}
             <div className=' flex justify-end items-start'>
-                <Image className='absolute pr-[519px] top-16' src='./images/oppleft.svg' alt='' />
+                <img className='absolute pr-[519px] top-16' src='./images/oppleft.svg' alt='' />
             </div>
             {/** right 2*/}
             <div className=' flex justify-end items-start'>
-                <Image className='absolute pr-[983px] top-[19rem]' src='./images/oppleft2.svg' alt='' />
+                <img className='absolute pr-[983px] top-[19rem]' src='./images/oppleft2.svg' alt='' />
             </div>
 
             <div className=' flex justify-between w-full  items-center flex-col lg:flex-row pt-[160px]'>
 
-                <div className=' relative left flex justify-start items-center '>
-                    <Image className='max-w-[704px] h-[810px]' src='./images/cardoppimage.svg' alt='' />
+                <div className='left relative  flex  justify-center lg:justify-start items-center '>
+                    <img className='max-w-[352px] md:max-w-[656px] md:h-[810px] 2xl:w-[704px] 2xl:h-[910px]' src='./images/cardoppimage.svg' alt=''/>
 
-                    <Image className='absolute left-[60px] top-[71px]' src='./images/Group 100.svg' alt='' />
+                    <img className='absolute hidden lg:block left-[60px] top-[156px]' src='./images/Group 100.svg' alt='' />
                 </div>
 
-                <div className='right mx-0 container  flex flex-col justify-center items-start mt-8 lg:mt-0'>
+                <div className='right mx-auto px-4 container  flex flex-col justify-center items-start mt-8 lg:mt-0'>
                     <div>
-                        <h1 className='max-w-[568px]  lg:max-w-[568px] text-[#111827]  text-base lg:text-4xl leading-10 font-extrabold not-italic inter-bold pb-10 pl-[141px]'>How to Explore the Best Opportunites for Yourself?</h1>
+                        <h1 className='max-w-[568px]  lg:max-w-[568px] text-[#111827] text-center lg:text-left  text-base lg:text-4xl leading-10 font-extrabold not-italic inter-bold pb-10 md:pl-[141px]'>How to Explore the Best Opportunites for Yourself?</h1>
                     </div>
                     <div>
-                        <p className='max-w-[517px] text-[#374151] text-center lg:text-left  text-base xl:text-lg leading-7 font-normal not-italic inter-medium pb-10 pl-[141px]'>Finding a Job that matches your skills & interest is a lot easier now, You can browse the Jobs & apply whenever & wherever you want.</p>
+                        <p className='max-w-[517px] text-[#374151] text-center lg:text-left  text-base xl:text-lg leading-7 font-normal not-italic inter-medium pb-10 md:pl-[141px]'>Finding a Job that matches your skills & interest is a lot easier now, You can browse the Jobs & apply whenever & wherever you want.</p>
                     </div>
 
                     <div className='flex justify-center items-start flex-wrap '>
@@ -63,7 +63,7 @@ const Cardopportunities = () => {
                                 <div key={index} className='flex flex-col justify-center items-start w-full md:w-[34.333333%] '>
                                     <div className='flex justify-center items-center pt-4 '>
                                         <div className='pl-5'>
-                                            <Image className='w-[44px] h-[44px] ' src={item.image} alt='' />
+                                            <img className='w-[44px] h-[44px] ' src={item.image} alt='' />
                                         </div>
                                         <div>
                                             <h1 className=' lg:max-w-[147px] text-[#374151] text-[1.4rem] lg:text-4xl leading-10 font-extrabold not-italic inter-bold '>{item.title}</h1>

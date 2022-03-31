@@ -11,19 +11,15 @@ import SocialMedia from './SocialMedia/SocialMedia'
 
 const Layout = () => {
     return (
-        <div>
+        <div className='bg-[#E5E5E5]'>
             <Header />
-            <MainBG/>
+            <MainBG />
             <SearchBar />
             <ImageContainer />
             <ExploreDream />
-            <br />
             <Cardopportunities />
-            <br />
             <OurTeam />
-            <br />
             <SocialMedia />
-            <br />
             <Footer />
         </div>
     )

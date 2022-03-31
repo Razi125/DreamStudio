@@ -1,29 +1,29 @@
 import React from 'react'
 import Link from 'next/link'
-import Image from 'next/image';
+
 const Header = () => {
     return (
         <>
-            <div className='bg-[#1F2937]  top-0 bg-fixed lg:block hidden '>
+            <div className='bg-[#1F2937]  top-0 bg-fixed lg:block hidden'>
                 <div className=' mx-auto container flex justify-between items-center pt-[22.89px] pb-6'>
                     <div>
-                        <Image src='./images/dreamlogo.svg' alt='Dream Logo' />
+                        <img src='./images/dreamlogo.svg' alt='Dream Logo' />
                     </div>
 
                     <div className='flex justify-between space-x-[40px] items-center'>
                         <div className='text-[#FFFFFF] text-lg font-semibold not-italic md:leading-7 inter-medium'>
-                            <Link  href="/">Product</Link>
+                            <Link href="/">Product</Link>
 
                         </div>
                         <div>
-                            <Image src='./images/Vector.svg' alt='Vector' />
+                            <img src='./images/Vector.svg' alt='Vector' />
                         </div>
 
                         <div className='text-[#FFFFFF] text-lg font-semibold not-italic md:leading-7 inter-medium'>
                             <Link href="/">Performance</Link>
                         </div>
                         <div>
-                            <Image src='./images/Vector.svg' alt='Vector' />
+                            <img src='./images/Vector.svg' alt='Vector' />
                         </div>
                         <div className='text-[#FFFFFF] text-lg font-semibold not-italic md:leading-7 inter-medium'>
                             <Link href="/">Dashboard</Link>
@@ -53,12 +53,12 @@ const Header = () => {
                             </div>
                         </div>
                     </div>
-
                     <div>
-                        <Image src='./images/dreamlogo.svg' alt='Dream Logo' />
+                        <img src='./images/dreamlogo.svg' alt='Dream Logo' />
                     </div>
                 </div>
             </div>
+
         </>
     )
 }

@@ -1,39 +1,39 @@
 
 import React from 'react'
-import Image from 'next/image';
+
 const MainBG = () => {
 
     return (
-        <div className='relative bg-[#1F2937] h-[710px]'>
+        <div className='relative bg-[#1F2937] w-full h-[500px] md:h-[700px] lg:h-[650px] 2xl:h-[750px]'>
             <div>
-                <Image className='absolute left-[147px] top-[520px]' src='./images/Group 100.svg' alt='' />
+                <img className='hidden lg:block absolute lg:left-[24px] lg:top-[424px] 2xl:left-[147px] 2xl:top-[570px]' src='./images/Group 100.svg' alt='' />
             </div>
 
+            <div className='flex w-full flex-col lg:flex-row'>
 
-            <div className=' flex justify-between w-full  items-center flex-col lg:flex-row '>
+                <div className='left mx-auto px-4 container flex flex-col lg:flex-row justify-center items-center lg:justify-start lg:items-start py-7 lg:py-0 lg:w-5/12  lg:top-36'>
 
-                <div className='left mx-0 container  flex flex-col justify-center items-start mt-8 lg:mt-0 pb-16 lg:pb-0'>
-
-                    <div className='left w-full container flex flex-col justify-center items-start pl-[160px] mt-2 '>
+                    <div className='left flex flex-col  justify-center items-center lg:items-start lg:pt-[9rem]  lg:pl-5 2xl:pl-[160px] '>
                         <div>
-                            <h1 className='text-[#FFFFFF] text-4xl lg:text-6xl leading-[60px]  font-black not-italic  w-[458px] inter-bold pb-8 '>Your Dream Job is waiting for you!</h1>
-
                             <div>
-                                <Image className='absolute  left-32 top-16' src='./images/Group 119.svg' alt='' />
+                                <h1 className='text-[#FFFFFF] text-base text-center lg:text-left lg:text-3xl 2xl:text-6xl leading-[60px]  font-black not-italic  max-w-[458px] inter-bold lg:pb-8'>Your Dream Job is waiting for you!</h1>
+                            </div>
+                            <div>
+                                <img className='hidden lg:block absolute  lg:pl-0 2xl:left-36 lg:top-20 2xl:top-24' src='./images/Group 119.svg' alt='' />
                             </div>
 
                             <div>
-                                <Image className='absolute left-[25.5rem] top-[17rem]' src='./images/circle.svg' alt='' />
+                                <img className='hidden lg:block absolute lg:left-[10.6rem] lg:top-[13rem] 2xl:left-[26.6rem] 2xl:top-[19rem]' src='./images/circle.svg' alt='' />
                             </div>
                         </div>
 
 
                         <div>
-                            <p className='text-[#FFFFFF] text-lg leading-7 font-normal not-italic w-[459px] inter-medium pb-8'>Finding a Job that matches your skills & interest is a lot easier now, You can browse the Jobs & apply whenever & wherever you want.</p>
+                            <p className='text-[#FFFFFF] text-center lg:text-left text-sm md:text-lg leading-7 font-normal not-italic max-w-[459px] inter-medium md:pb-8'>Finding a Job that matches your skills & interest is a lot easier now, You can browse the Jobs & apply whenever & wherever you want.</p>
                         </div>
 
 
-                        <div className='flex justify-between items-center'>
+                        <div className='flex justify-between items-center pt-4 lg:pt-0'>
                             <div>
                                 <div className='flex justify-between items-center space-x-4 '>
                                     <p className='text-[#FFFFFF] font-normal not-italic text-lg leading-7 w-[66px]'>Remote</p>
@@ -60,13 +60,17 @@ const MainBG = () => {
 
                 </div>
 
-                <div className='right relative left flex justify-start items-center '>
-                    <Image className='relative max-w-[704px] h-[810px] -mb-64' src='./images/MainImage.svg' alt='' />
+                <div className=' lg:w-3/5'>
+                    <div className='right  relative left flex justify-center items-center lg:justify-end lg:items-end px-4 lg:px-0'>
+                        <img className='relative  h-[550px] md:h-[650px]  lg:h-[734px]  2xl:h-[900px] lg:mt-0' src='./images/HeaderbgImag.svg' alt='' />
 
-                    <Image className='absolute -left-[56px] top-[71px]' src='./images/Group 100.svg' alt='' />
+                        <img className='hidden lg:block absolute lg:top-[4rem] 2xl:top-[5rem] lg:left-[51px]  2xl:left-[17rem] top-[7rem]' src='./images/Group 100.svg' alt='' />
+
+                    </div>
                 </div>
 
             </div>
+
 
         </div>
     )
